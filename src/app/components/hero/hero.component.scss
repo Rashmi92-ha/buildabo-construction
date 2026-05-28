@@ -1,0 +1,84 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/images/luxury building image.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  .overlay {
+    padding-left: 80px;
+    max-width: 700px;
+
+    h1 {
+      font-size: 5rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+
+      button {
+        padding: 14px 30px;
+        border: none;
+        border-radius: 30px;
+
+        font-size: 1rem;
+        cursor: pointer;
+
+        transition: 0.3s;
+      }
+
+      .primary-btn {
+        background: #f5b041;
+        color: #000000;
+      }
+
+      .secondary-btn {
+        background: transparent;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+      }
+
+      button:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    .overlay {
+      padding: 0 20px;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+    }
+  }
+}

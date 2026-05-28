@@ -1,0 +1,27 @@
+<section id="pricing" class="pricing">
+  <div class="section-title">
+    <h2>Pricing Plans</h2>
+
+    <p>Flexible construction packages for every requirement.</p>
+  </div>
+
+  <div class="pricing-container">
+    <div
+      class="price-card"
+      *ngFor="let plan of pricingPlans"
+      [class.featured]="plan.featured"
+    >
+      <h3>{{ plan.title }}</h3>
+
+      <h1>{{ plan.price }}</h1>
+
+      <ul>
+        <li *ngFor="let feature of plan.features">✔ {{ feature }}</li>
+      </ul>
+
+      <a href="#contact">
+        <button>Choose Plan</button>
+      </a>
+    </div>
+  </div>
+</section>
