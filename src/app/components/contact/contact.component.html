@@ -1,0 +1,58 @@
+<section id="contact" class="contact">
+  <div class="contact-content">
+    <div class="contact-info">
+      <h2>Let’s Build Something Great Together</h2>
+
+      <p>Contact us today for premium construction and interior solutions.</p>
+
+      <div class="info-box">
+        <h4>Phone</h4>
+        <p>+91 9876543210</p>
+      </div>
+
+      <div class="info-box">
+        <h4>Email</h4>
+        <p>buildabo&#64;gmail.com</p>
+      </div>
+
+      <div class="info-box">
+        <h4>Location</h4>
+        <p>Bangalore, India</p>
+      </div>
+    </div>
+
+    <form class="contact-form" (submit)="sendEmail($event)">
+      <input
+        type="text"
+        name="user_name"
+        placeholder="Your Name"
+        required
+        autocomplete="name"
+      />
+
+      <input
+        type="email"
+        name="user_email"
+        placeholder="Your Email"
+        required
+        autocomplete="email"
+      />
+
+      <input
+        type="text"
+        name="project_type"
+        placeholder="Project Type"
+        required
+      />
+
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Your Message"
+        required
+      ></textarea>
+
+      <button type="submit">Request Quote</button>
+    </form>
+  </div>
+</section>
